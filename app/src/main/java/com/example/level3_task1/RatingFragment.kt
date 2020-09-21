@@ -30,7 +30,15 @@ class RatingFragment : Fragment() {
         }
 
         showRandomAssessableGame()
+    }
 
+    private fun navigateToSummary() {
+
+        val args = Bundle()
+        args.putFloat(ARG_GAME_RATING, ratingBar.rating)
+        args.putString(ARG_GAME_NAME, txt_game.text.toString())
+
+        findNavController().navigate(R.id.action_RatingFragment_to_SummaryFragment, args)
     }
 
     fun showRandomAssessableGame(){
@@ -40,12 +48,4 @@ class RatingFragment : Fragment() {
         txt_game.text = randomGame
     }
 
-    private fun navigateToSummary() {
-
-        val args = Bundle()
-        args.putFloat(ARG_GAME_RATING, ratingBar.rating)
-        args.putString(ARG_GAME_NAME, txt_game.text.toString())
-
-        findNavController().navigate(R.id.action_RatingFragment_to_summaryFragment, args)
-    }
 }
