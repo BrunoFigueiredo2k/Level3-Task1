@@ -7,6 +7,15 @@
     <string name="next">Next</string>
     <string name="previous">Previous</string>
 
-    <string name="hello_first_fragment">Hello first fragment</string>
+    <!-- Strings for start fragment -->
+    <string name="title">Welcome to the Games Rating app!</string>
+    <string name="subtitle_start">Click to start rating :)</string>
+    <string name="btn_start">Start</string>
+
+    <!-- Strings for rating fragment -->
+    <string name="title_rating">Rate the following game from 1 to 5 stars!</string>
+    <string name="btn_rating">To summary</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
